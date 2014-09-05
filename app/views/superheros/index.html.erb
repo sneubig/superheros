@@ -1,0 +1,11 @@
+
+	<% @superheros.each do |s| %>
+	<div class="superhero">
+		<h2> <%= s.name %> </h2>
+		<%= image_tag(s.image) %>
+	<%= link_to 'Edit', edit_superhero_path(s) %>
+	<%= link_to 'Delete', @superhero, method: :delete %>
+	</div>
+<% end %>
+
+

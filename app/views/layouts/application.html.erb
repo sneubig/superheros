@@ -5,10 +5,48 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <style>
+  	html {
+  		color: white;
+  		background-image: url(http://www.mockduck.net/blog/wp-content/uploads/2009/07/spiderman-training2.png);
+  		background-size: cover;
+  	}
+
+  	h1 {
+  		text-align: center;
+  		font-size: 50px;
+  	}
+
+  	img {
+  		height: 200px;
+  		width: 200px;
+  	}
+
+  	a {
+  		color: red;
+  		text-decoration: none;
+  	}
+
+  	.superhero {
+  		border: 4px solid red;
+  		width: 200px;
+  	}
+
+  	.superhero h2 {
+  		text-align: center;
+  	}
+
+
+  </style>
 </head>
 <body>
 
+	<h1> <%= link_to 'Superheros', superheros_path %></h1>
+	<hr>
+
 <%= yield %>
+
 
 </body>
 </html>

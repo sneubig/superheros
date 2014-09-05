@@ -1,0 +1,10 @@
+ <h2><%= @superhero.name %></h2> 
+    <%= image_tag( @superhero.image )%>
+    <%= link_to 'Edit', edit_superhero_path(@superhero) %>
+    <%= link_to 'delete', @superhero, method: :delete %>
+
+
+<%= render 'form' %>
+
+
+<%= link_to 'Back', superheros_path %>
